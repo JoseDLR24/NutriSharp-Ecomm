@@ -11587,4 +11587,29 @@ textarea.form-control-lg {
 
 .site-header .aws-search-field {
   font-size: 0.9rem;
+}
+
+/******** MAIN MENU ********/
+.main-navigation {
+  font-weight: 400;
+}
+.main-navigation .current-menu-item {
+  background-color: rgb(109, 110, 197);
+}
+.main-navigation a {
+  color: var(--bs-white);
+  padding: 0.8rem 1.5rem;
+}
+.main-navigation a:hover {
+  background-color: rgb(109, 110, 197);
+}
+.main-navigation .menu-toggle {
+  background-color: rgb(141, 137, 255);
+  color: #fff;
+  border: none;
+}
+
+/******** front page carousel slider ********/
+.carousel .carousel-control-prev, .carousel .carousel-control-next {
+  width: 8%;
 }/*# sourceMappingURL=main.css.map */

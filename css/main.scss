@@ -55,10 +55,42 @@ $theme-colors: map-merge($theme-colors , $custom-color);
     }
 }
 
-
+// change of size
 .site-header {
     .aws-search-field {
         font-size: 0.9rem;
+    }
+}
+
+/******** MAIN MENU ********/
+// change of colors for the nav menu and bootstrap classes added in the header.php file to save lines of code
+.main-navigation {
+    font-weight: 400;
+
+    .current-menu-item {
+        background-color: rgb(109, 110, 197);
+    }
+
+    a {
+        color: var(--bs-white);
+        padding: 0.8rem 1.5rem;
+    }
+
+    a:hover {
+        background-color: rgb(109, 110, 197);
+    }
+
+    .menu-toggle {
+        background-color: $primary;
+        color: $white;
+        border: none;
+    }
+}
+
+/******** front page carousel slider ********/
+.carousel {
+    .carousel-control-prev, .carousel-control-next {
+        width: 8%;
     }
 }
 
