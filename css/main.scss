@@ -4,16 +4,16 @@ $gray: #e6e6e6;
 
 $theme-colors: (
     "primary": $primary,
-    "gray": $gray
+    "gray": $gray,
 );
 
 // create own map
 $custom-color: (
-    "icon-background": rgba(141, 137, 255, 0.2)
+    "icon-background": rgba(141, 137, 255, 0.2),
 );
 
 // merge maprs
-$theme-colors: map-merge($theme-colors , $custom-color);
+$theme-colors: map-merge($theme-colors, $custom-color);
 
 // importing bootstrap
 @import "./bootstrap/scss/bootstrap";
@@ -21,7 +21,7 @@ $theme-colors: map-merge($theme-colors , $custom-color);
 // Then add additional custom code here
 
 /******** HEADER ********/
-// in the following lines of code I used the variables created before in order to create an easy contact header for the page 
+// in the following lines of code I used the variables created before in order to create an easy contact header for the page
 .announcement-bar {
     font-size: 0.8rem;
     border-bottom: 1px solid var(--bs-gray);
@@ -31,12 +31,12 @@ $theme-colors: map-merge($theme-colors , $custom-color);
         margin: 0 -10px;
         list-style-type: none;
         display: inline-flex;
-    
+
         li {
             margin: 0 10px;
             display: flex;
             align-items: center;
-    
+
             .bi {
                 background-color: var(--bs-icon-background);
                 display: inline-flex;
@@ -89,8 +89,30 @@ $theme-colors: map-merge($theme-colors , $custom-color);
 
 /******** front page carousel slider ********/
 .carousel {
-    .carousel-control-prev, .carousel-control-next {
+
+    .carousel-control-prev,
+    .carousel-control-next {
         width: 8%;
     }
 }
 
+/******** CATEGORIES ********/
+.categories {
+    background-color: rgba(141, 137, 255, 0.2);
+
+    .categories__col {
+        height: 212px;
+
+        img {
+            width: 100%;
+            object-fit: cover;
+        }
+    }
+
+    // media query for desktop views so when its above the medium breakpoint from bootstrap this happens
+    @include media-breakpoint-up(md) {
+        .categories__col {
+            height: 336px;
+        }
+    }
+}

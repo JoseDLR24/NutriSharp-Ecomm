@@ -11610,6 +11610,25 @@ textarea.form-control-lg {
 }
 
 /******** front page carousel slider ********/
-.carousel .carousel-control-prev, .carousel .carousel-control-next {
+.carousel .carousel-control-prev,
+.carousel .carousel-control-next {
   width: 8%;
+}
+
+/******** CATEGORIES ********/
+.categories {
+  background-color: rgba(141, 137, 255, 0.2);
+}
+.categories .categories__col {
+  height: 212px;
+}
+.categories .categories__col img {
+  width: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+@media (min-width: 768px) {
+  .categories .categories__col {
+    height: 336px;
+  }
 }/*# sourceMappingURL=main.css.map */

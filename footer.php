@@ -12,19 +12,32 @@
 ?>
 
 	<footer id="colophon" class="site-footer">
-		<div class="site-info">
-			<a href="<?php echo esc_url( __( 'https://wordpress.org/', 'nutrisharp' ) ); ?>">
-				<?php
-				/* translators: %s: CMS name, i.e. WordPress. */
-				printf( esc_html__( 'Proudly powered by %s', 'nutrisharp' ), 'WordPress' );
-				?>
-			</a>
-			<span class="sep"> | </span>
-				<?php
-				/* translators: 1: Theme name, 2: Theme author. */
-				printf( esc_html__( 'Theme: %1$s by %2$s.', 'nutrisharp' ), 'nutrisharp', '<a href="http://underscores.me/">Underscores.me</a>' );
-				?>
-		</div><!-- .site-info -->
+		<div class="bg-primary text-white pt-5 pb-5">
+			<div class="container">
+				<div class="row">
+					<div class="col-2">
+						About
+					</div>
+					<div class="col-2">
+						Company
+					</div>
+					<div class="col-2">
+						Keep in Touch
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<div class="container">
+			<div class="row d-flex align-items-center">
+				<div class="col">
+					<p>&copy; <?php bloginfo('name');?><?php echo date('Y'); ?></p>
+				</div>
+				<div class="col h-25 d-inline-block text-end">
+					<img src="<?php echo get_template_directory_uri(); ?>/img/payment-methods.png" class="img-fluid"  alt="">
+				</div>
+			</div>
+		</div>
 	</footer><!-- #colophon -->
 </div><!-- #page -->
 
